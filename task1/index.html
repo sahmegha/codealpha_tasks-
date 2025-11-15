@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery</h1>
+            <p class="subtitle">Browse through my photos - from mountains and cities to animals and portraits</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search images...">
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-filter="nature">
+                    <i class="fas fa-tree"></i> Nature
+                </button>
+                <button class="filter-btn" data-filter="city">
+                    <i class="fas fa-city"></i> City
+                </button>
+                <button class="filter-btn" data-filter="travel">
+                    <i class="fas fa-plane"></i> Travel
+                </button>
+                <button class="filter-btn" data-filter="animals">
+                    <i class="fas fa-paw"></i> Animals
+                </button>
+               
+            </div>
+        </div>
+
+        <div class="gallery">
+        </div>
+
+        <footer>
+            <p>Image Gallery &copy; 2025</p>
+        </footer>
+    </div>
+
+    <div class="lightbox">
+        <button class="lightbox-close"><i class="fas fa-times"></i></button>
+        <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+                <div class="lightbox-meta">
+                    <span><i class="fas fa-calendar"></i> <span class="lightbox-date"></span></span>
+                    <span><i class="fas fa-heart"></i> <span class="lightbox-likes"></span></span>
+                    <span><i class="fas fa-eye"></i> <span class="lightbox-views"></span></span>
+                </div>
+            </div>
+            <div class="lightbox-thumbnails">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
