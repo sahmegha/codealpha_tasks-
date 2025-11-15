@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    padding: 20px;
+}
+
+.calculator {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        0 0 20px rgba(120, 0, 255, 0.3);
+    overflow: hidden;
+}
+
+.display {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.previous {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-height: 20px;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.current {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    word-break: break-all;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 20px;
+}
+
+button {
+    border: none;
+    padding: 18px 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.number {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.number:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.operator {
+    background: rgba(157, 78, 221, 0.25);
+}
+
+.operator:hover {
+    background: rgba(157, 78, 221, 0.35);
+}
+
+.equals {
+    background: linear-gradient(135deg, #9d4edd, #7b2cbf);
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background: linear-gradient(135deg, #a56ee0, #8a3fd4);
+}
+
+.function {
+    background: rgba(255, 107, 107, 0.25);
+}
+
+.function:hover {
+    background: rgba(255, 107, 107, 0.35);
+}
+
+.zero {
+    grid-column: span 2;
+}
