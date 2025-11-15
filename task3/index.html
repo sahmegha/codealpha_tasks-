@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-header">
+             <h1 class="elegant-text">AURORA</h1>
+             <p>Where music comes alive</p>
+        </div>
+        
+        <div class="album-art">
+            <img src="img/img1.jpg" alt="Album Art">
+        </div>
+        
+        <div class="song-info">
+            <h2 class="song-title">Zara Sa</h2>
+            <p class="song-artist">KK , Pritam Chakraborty</p>
+        </div>
+        
+        <div class="progress-area">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="timer">
+                <span class="current-time" id="current-time">0:00</span>
+                <span class="total-duration" id="total-duration">0:00</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="prev"><i class="fas fa-step-backward"></i></button>
+            <button class="play-pause" id="play-pause">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next"><i class="fas fa-step-forward"></i></button>
+        </div>
+        
+        <div class="volume-control">
+            <i class="fas fa-volume-up"></i>
+            <div class="volume-slider" id="volume-slider">
+                <div class="volume-progress" id="volume-progress"></div>
+            </div>
+        </div>
+        
+        <div class="autoplay-toggle">
+            <span>Autoplay</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="autoplay">
+                <span class="slider"></span>
+            </label>
+        </div>
+        
+        <div class="playlist">
+            <h3>Playlist</h3>
+            <div class="playlist-item active">
+                <img src="img/img1.jpg" alt="Song 1">
+                <div class="playlist-info">
+                    <div class="playlist-title">Zara Sa</div>
+                    <div class="playlist-artist">KK , Pritam Chakraborty</div>
+                </div>
+                <div class="playlist-duration">5:03</div>
+            </div>
+            <div class="playlist-item">
+                <img src="img/img2.jpg" alt="Song 2">
+                <div class="playlist-info">
+                    <div class="playlist-title">Hawayein</div>
+                    <div class="playlist-artist">Arjit Singh , Pritam Chakraborty</div>
+                </div>
+                <div class="playlist-duration">4:51</div>
+            </div>
+            <div class="playlist-item">
+                <img src="img/img3.jpg" alt="Song 3">
+                <div class="playlist-info">
+                    <div class="playlist-title">Agar Tum Sath Ho</div>
+                    <div class="playlist-artist">Alka Yagnik , Arjit Singh</div>
+                </div>
+                <div class="playlist-duration">5:41</div>
+            </div>
+            <div class="playlist-item">
+                <img src="img/img4.jpg" alt="Song 4">
+                <div class="playlist-info">
+                    <div class="playlist-title">Love Me Like You Do</div>
+                    <div class="playlist-artist">Ellie Goulding</div>
+                </div>
+                <div class="playlist-duration">4:09</div>
+            </div>
+            <div class="playlist-item">
+                <img src="img/img5.jpg" alt="Song 5">
+                <div class="playlist-info">
+                    <div class="playlist-title">Main Rang Sharbaton Ka</div>
+                    <div class="playlist-artist">Arjit Singh</div>
+                </div>
+                <div class="playlist-duration">4:30</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
